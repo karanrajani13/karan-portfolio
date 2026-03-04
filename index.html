@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karan Rajani</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primarybg: "#0F1113",
+            secondarybg: "#171A1D",
+            accent: "#3A6F8F",
+            textprimary: "#E6E9EC",
+            textsecondary: "#A8B0B7"
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-black">
+
+<!-- PDF VIEWER -->
+<iframe 
+src="resume/karan-rajani-portfolio.pdf"
+style="position:fixed; top:0; left:0; width:100%; height:100%; border:none;">
+</iframe>
+
+<!-- DOWNLOAD BUTTON -->
+<a href="resume/karan-rajani-portfolio.pdf" 
+   download
+   style="
+   position:fixed;
+   bottom:30px;
+   left:50%;
+   transform:translateX(-50%);
+   background:#3A6F8F;
+   color:white;
+   padding:12px 24px;
+   font-family:sans-serif;
+   border-radius:8px;
+   text-decoration:none;
+   font-size:14px;
+   z-index:1000;
+   box-shadow:0 6px 20px rgba(0,0,0,0.4);">
+   Download PDF
+</a>
+
+</body>
+</html>
